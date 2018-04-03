@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Stock Exchange</ion-title>
+    
+    <ion-buttons end>
+  <button ion-button icon-only (click)="read()">
+    <ion-icon name="add"></ion-icon>
+  
+
+  
+  </button>
+  
+ 
+ </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  
+ 
+ 
+    <div class=bg2>
+   <ion-list>
+     
+    <ion-item *ngFor="let data of displayData">
+       
+      <ion-icon name="person" danger item-left></ion-icon>
+      <h3>{{data.name}}</h3>
+     
+       <h4> Price(GH):{{data.price}}</h4>
+        <h4>Volume :{{data.volume}}</h4>
+        <h4>Change:{{data.change}}</h4>
+    </ion-item>
+    {{myname}}
+  </ion-list>
+  </div>
+ 
+
+
+</ion-content>

@@ -1,0 +1,97 @@
+<!--
+  Generated template for the HomeonePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Ghana Stock Exchange</ion-title>
+  
+  </ion-navbar>
+   <ion-slides autoplay="50" loop="true" speed="3000">
+ 
+ 
+ 
+  <ion-slide>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3d4l3lqp224_FdgnJjveG-Ub9oJazdJMQJh5BSo8AbuCOpnTMA' />
+  </ion-slide>
+
+   <ion-slide>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1p-F3mfOA5NKYXJdN6BubXCshVKsGSvKWT6LvRlOVL3RfzCeA'/>
+  </ion-slide>
+ 
+  <ion-slide>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2vNswNBrr4RvfMBdzgNRcT-ZS8Mu9g4QU2QWp8rRq_5Il1lV" />
+  </ion-slide>
+ 
+ 
+ 
+</ion-slides>
+</ion-header>
+ 
+
+
+<ion-content padding id="homeone">
+  
+  
+
+  <ion-grid >
+ 
+
+      <ion-row>
+      <ion-col center text-center>
+           <ion-item>
+    <ion-label>First Name:</ion-label>
+    <ion-input [(ngModel)]="firstname"></ion-input>
+    </ion-item>
+    </ion-col>
+    </ion-row>
+
+     <ion-row>
+      <ion-col center text-center>
+           <ion-item>
+    <ion-label>Last Name:</ion-label>
+    <ion-input [(ngModel)]="lastname"></ion-input>
+    </ion-item>
+    </ion-col>
+    </ion-row>
+
+      <ion-row>
+      <ion-col center text-center>
+           <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+      </ion-col>
+    </ion-row>
+
+      <ion-row>
+      <ion-col center text-center>
+             <ion-item>
+    <ion-label>Password:</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col center text-center>
+         <button ion-button full color="lightText" (click)="register(email, password,firstname,lastname)">Register</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col center text-center>
+        <button ion-button full color="lightText" (click)="login(email, password)">Login</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col center text-center>
+        <button ion-button full color="lightText" (click)="sendEmailVerification()">Resend the email verification</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+</ion-content>
